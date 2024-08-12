@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 8px;
+        }
+        .hidden-border {
+            border: none;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+        .switch-page {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <div class="wrapper">
+        <h1 class="title">Login</h1>
+        <form id="loginForm">
+            <table class="hidden-border">
+                <tr>
+                    <td><label for="loginEmail">Email:</label></td>
+                    <td><input type="email" id="loginEmail" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="loginPassword">Password:</label></td>
+                    <td><input type="password" id="loginPassword" name="password" required minlength="6"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Login</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p class="switch-page">Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
